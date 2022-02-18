@@ -24,3 +24,18 @@ ggplot(na.omit(body_mass_df),
 
 DT::datatable(data = penguins)
 
+# Reactive Histogram
+
+island_df <- penguins %>% 
+  filter(island == "Dream")
+
+
+ggplot(data = na.omit(penguins), aes(x = flipper_length_mm)) +
+  geom_histogram(aes(fill = species), alpha = 0.6) +
+  labs(x = "Flipper Length (mm)",
+       y = "Frequency",
+       fill = "Species") +
+  scale_fill_manual(values = c("Adelie" = "#FEA346",
+                               "Chinstrap" = "#B251F1",
+                               "Gentoo" = "#4BA4A4"))
+
