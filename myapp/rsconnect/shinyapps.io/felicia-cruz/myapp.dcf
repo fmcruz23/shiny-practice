@@ -1,0 +1,11 @@
+name: myapp
+title:
+username:
+account: felicia-cruz
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5686547
+bundleId: 5595415
+url: https://felicia-cruz.shinyapps.io/myapp/
+when: 1645214842.72807
+lastSyncTime: 1645214842.72809
